@@ -2,7 +2,7 @@
 
 int add(const char* input_string){
   int sum;
-  if(input_string == '\0'){
+  if(*input_string == '\0'){
     sum = 0;
   }
   else{
