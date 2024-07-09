@@ -7,6 +7,9 @@ int check_for_empty_string(char* input_string){
   return result;
 }
 int add(const char* input_string){
-  int sum = check_for_empty_string(input_string);
+  /* duplicating the input string to avoid modifying the original string */
+  char input_copy[];
+  strcpy(input_copy,input_string);
+  int sum = check_for_empty_string(input_copy);
   return sum;
 }
