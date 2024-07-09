@@ -6,7 +6,7 @@ int check_for_empty_string(char* input_string){
   }
   return result;
 }
-int add(char* input_string){
+int add(const char* input_string){
   int sum = check_for_empty_string(input_string);
   return sum;
 }
